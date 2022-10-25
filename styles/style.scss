@@ -1,0 +1,364 @@
+body {
+    background-color: #000000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+}
+
+
+nav {
+    .menu {
+      display: block;
+      text-align: center;
+
+      a {
+        text-align: center;
+        font-size: 20pt;
+        text-decoration: none;
+        color: rgb(128, 128, 128);
+        margin-right: 20px;
+        text-shadow: 2px 4px 8px #4e4e4e;
+      }
+    }
+  
+      //  .icons {
+
+       
+      // }
+ 
+
+
+    a:hover {
+        font-size: 20pt;
+        text-decoration: underline;
+        color: rgb(255, 255, 255);
+    }
+}
+  
+  
+  p {
+    font-size: 15pt;
+    font-family: sans-serif;
+    color: rgb(160, 160, 160);
+  }
+  
+
+  
+.header {
+    background-image: url("../image/4c858de43bb97\,Plug-Me.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height : 100vh;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 130px;
+      // background-color: #000000;
+      border-radius: 20px;
+      color:rgb(202, 200, 200);
+      text-shadow: 4px 6px 8px #000000;
+      
+      
+    }
+}
+
+  .bio h1 {
+    text-align: center;
+    font-size: bold;
+    color: #c2c2c2;
+  }
+
+  .content 
+  {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      color: #c2c2c2;
+      text-shadow: 2px 2px 8px #dfdfdf;
+    }
+
+    h2 {
+      color: #cccccc;
+      text-shadow: 2px 4px 8px #0c0c0c;
+    }
+    
+
+    
+
+    .card {
+      a {
+        color: rgb(233, 233, 233);
+        text-decoration: none;
+        text-shadow: 2px 4px 8px #dfdfdf;
+        
+   
+        
+        
+        
+      }
+    }
+  }
+  
+  
+
+
+  /* ----------HOVER------------------------------
+  -------------------------------------------------- */
+  
+  
+  .animated-word:hover {
+    color: rgb(255, 255, 255);
+    outline-color: rgba(71, 126, 232, 0);
+    outline-offset: 300px;
+     box-shadow: 0 0 5px #ffffff,
+                    0 0 25px #eeeeee,
+                    0 0 50px #eeeeee,
+                    0 0 200px #eeeeee;
+                    
+  }
+
+  .animated-word {
+    font-family: Helvetica;
+    background-color: #000000;
+    border-radius: 100px;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    font-weight: 200px;
+    font-size: 45px;
+    
+    
+    color: #636262;
+    cursor: pointer;
+    max-width: 600px; 
+    width: 100%; 
+    outline: 5px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 3px;
+    transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+    -webkit-box-reflect:below 0.5px linear-gradient(transparent, rgba(255, 255, 255, 0.333));
+  }
+  
+  // --------Hintergrund 2te----------------------
+  // ------------------------------------------------------
+
+  .teaser {
+    background-image: url("../image/DJ_Music_Mixer.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  .teaser2 {
+    background-image: url("../image/hd-dj-wallpaper-machinegun_stereo_player-1920x1200.jpg");
+    height: 80vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+ 
+  
+  ul a {
+    text-decoration: none;
+    font-size: 20pt;
+        text-decoration: underline;
+        color: rgb(255, 255, 255);
+
+        
+  }
+
+// ---------------Playliste------------------------------
+// ------------------------------------------------
+
+  ul > li {
+    display: inline-block;
+    margin-left: 20px;
+    
+  }
+  
+  .back {
+    text-align: center;
+
+  }
+
+ 
+  
+// --------------EQUIPMENT---------------------------------
+// -----------------------------------------
+  
+.equip {
+  
+  // align-items: center;
+}
+
+section {
+    display: grid;
+    width: 100%;
+    margin: 10px;
+    padding: 6px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    gap: 4.5rem;
+    grid-template-areas: 
+    "g1 g2 g3 g4"
+    "g5 g6 g7 g8";
+  }
+
+   .box1 {
+    grid-area: g2;
+   }
+
+   .box2 {
+    grid-area: g3;
+   }
+
+   .box3 {
+    grid-area: g6;
+   }
+   .box4 {
+    grid-area: g7;
+   }
+
+
+
+  figure.image {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 420px;
+  max-width: 310px;
+  max-height: 520px;
+  width: 100%;
+  background: #000000;
+  color: #eeeeee;
+  text-align: center;
+  }
+
+  figure.image * {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    }
+
+    figure.image img {
+      max-width: 100%;
+      position: relative;
+      opacity: 0.6;
+      }
+
+
+      figure.image h3 {
+        position: absolute;
+        left: 50px;
+        right: 50px;
+        display: inline-block;
+        background: #000;
+        -webkit-transform: skew(-5deg) rotate(-10deg) translate(0, -50%);
+        -moz-transform: skew(-5deg) rotate(-10deg) translate(0, -50%);
+        -ms-transform: skew(-5deg) rotate(-10deg) translate(0, -50%);
+        -o-transform: skew(-5deg) rotate(-10deg) translate(0, -50%);
+        transform: skew(-5deg) rotate(-10deg) translate(0, -50%);
+        padding: 20px 5px;
+        margin: 0;
+        top: 50%;
+        text-transform: uppercase;
+        font-weight: 400;
+        }
+
+        figure.image:before {
+          height: 130%;
+          width: 130%;
+          top: 0;
+          left: 0;
+          content: '';
+          background: #cccccc;
+          position: absolute;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          -webkit-transform: rotate(110deg) translateY(-50%);
+          -moz-transform: rotate(110deg) translateY(-50%);
+          -ms-transform: rotate(110deg) translateY(-50%);
+          -o-transform: rotate(110deg) translateY(-50%);
+          transform: rotate(110deg) translateY(-50%);
+          }
+
+           figure.image:hover img,
+           figure.image.hover img {
+           opacity: 1;
+           -moz-transform:scale(1.1);
+           -ms-transform: scale(1.1);
+           -o-transform: scale(1.1);
+           transform: scale(1.1);
+          }
+           figure.image:hover h3,
+           figure.image.hover h3 {
+           -moz-transform:skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+           -ms-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+           -o-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+           transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+          }
+           figure.image:hover:before,
+           figure.image.hover:before {
+           -moz-transform:rotate(110deg) translateY(-150%);
+           -ms-transform: rotate(110deg) translateY(-150%);
+           -o-transform: rotate(110deg) translateY(-150%);
+            transform: rotate(110deg) translateY(-150%);
+          }
+
+
+          
+
+  .card {
+  // border: 10px solid color#bdbdbd;
+  margin: 10px;
+  padding: 30px;
+  display:inline-block;
+  color: aliceblue;
+  font-size: 20pt;
+  width: 25vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+ }
+ 
+  
+  .facts {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25pt;
+    // border-radius: 50px;
+    background-color: rgb(121, 121, 121);
+  }
+
+  
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    text-shadow: 2px 4px 8px #4e4e4e;
+  }
+
+
+  // Tablette---------------
+  // @media screen and (min-width: 360px) and (max-width: 768px )
+
+  // Desktop----------------------
+  
+   
+ 
