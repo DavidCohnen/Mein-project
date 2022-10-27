@@ -1,3 +1,9 @@
+
+
+* {
+  // border: solid 2px red;
+}
+
 body {
     background-color: #000000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -7,11 +13,21 @@ body {
 
 nav {
     .menu {
-      display: block;
-      text-align: center;
+      position: fixed;
+      display: flex;
+      width: 100%;
+      height: 6vh;
+      background-color: #000;
+      justify-content:space-around;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 0 1px #ffffff,
+                    0 0 5px #ffffff,
+                    0 0 10px #eeeeee,
+                    0 0 20px #eeeeee;
 
       a {
-        text-align: center;
+        // text-align: center;
         font-size: 20pt;
         text-decoration: none;
         color: rgb(128, 128, 128);
@@ -19,12 +35,7 @@ nav {
         text-shadow: 2px 4px 8px #4e4e4e;
       }
     }
-  
-      //  .icons {
 
-       
-      // }
- 
 
 
     a:hover {
@@ -36,7 +47,8 @@ nav {
   
   
   p {
-    font-size: 15pt;
+    margin: 20px;
+    font-size: 20pt;
     font-family: sans-serif;
     color: rgb(160, 160, 160);
   }
@@ -58,40 +70,104 @@ nav {
     justify-content: center;
 
     h1 {
-      font-size: 130px;
-      // background-color: #000000;
-      border-radius: 20px;
+      margin: 20px;
+      font-size: 250px;
       color:rgb(202, 200, 200);
-      text-shadow: 4px 6px 8px #000000;
+      text-shadow: 6px 7px 10px #030303;
+      // -webkit-box-reflect:below 0.5px linear-gradient(transparent, #0005);
+                     
+     
+      
+      
       
       
     }
 }
 
-  .bio h1 {
-    text-align: center;
-    font-size: bold;
-    color: #c2c2c2;
+// -------------Biography----------------------------
+// ----------------------------------------------------------
+
+  @-webkit-keyframes spinner {
+    from {
+    -webkit-transform: rotateY(0deg);
+    }
+     to 
+     
+    {-webkit-transform: rotateY(-360deg);}
+     
+  }
+    #stage {
+     
+      margin: 13em;
+     -webkit-perspective: 1200px;
+    }
+
+    #spinner {
+     -webkit-animation-name: spinner;
+     -webkit-animation-timing-function: linear;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-duration: 6s;
+     -webkit-transform-style: preserve-3d;
+     
+    }
+    
+      #spinner:hover {
+       -webkit-animation-play-state: paused;
+      }
+
+      #spinner img {
+        border-radius: 30px;
+        position: absolute;
+        border: 1px solid rgb(0, 0, 0);
+        background: rgba(126, 125, 125, 0.8);
+        box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+        box-shadow: 0 0 1px #ffffff,
+                    0 0 5px #ffffff,
+                    0 0 10px #eeeeee,
+                    0 0 20px #eeeeee;
+                    -webkit-box-reflect:below 0.4px linear-gradient(transparent, #0005);
+                    
+      }
+      
+      
+
+      .bio h1 {
+      text-align: center;
+      font-size: bold;
+      color: #dddddd;
+      text-shadow: 2px 4px 4px #585858;
+      
   }
 
+  // ----------------contant----------------------------
+  
+  
+  
   .content 
   {
+    border: solid 3px rgb(80, 80, 80);
     padding-left: 20vw;
     padding-right: 20vw;
     padding-top: 20px;
     padding-bottom: 20px;
+    box-shadow: 0 0 5px #ffffff,
+                0 0 25px #ffffff,
+                0 0 50px #eeeeee,
+                0 0 150px #eeeeee;
 
     h3 {
       display: flex;
       justify-content: center;
-      color: #c2c2c2;
+      color: #0f0f0f;
       text-shadow: 2px 2px 8px #dfdfdf;
     }
 
     h2 {
       color: #cccccc;
       text-shadow: 2px 4px 8px #0c0c0c;
+      
     }
+
     
 
     
@@ -121,7 +197,7 @@ nav {
     color: rgb(255, 255, 255);
     outline-color: rgba(71, 126, 232, 0);
     outline-offset: 300px;
-     box-shadow: 0 0 5px #ffffff,
+    box-shadow: 0 0 5px #ffffff,
                     0 0 25px #eeeeee,
                     0 0 50px #eeeeee,
                     0 0 200px #eeeeee;
@@ -138,6 +214,7 @@ nav {
     font-size: 45px;
     
     
+    
     color: #636262;
     cursor: pointer;
     max-width: 600px; 
@@ -147,7 +224,10 @@ nav {
     outline-offset: 3px;
     transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
     -webkit-box-reflect:below 0.5px linear-gradient(transparent, rgba(255, 255, 255, 0.333));
+    box-shadow: 0 0 10px #ffffff,
+   
   }
+
   
   // --------Hintergrund 2te----------------------
   // ------------------------------------------------------
@@ -176,6 +256,7 @@ nav {
     font-size: 20pt;
         text-decoration: underline;
         color: rgb(255, 255, 255);
+        
 
         
   }
@@ -186,28 +267,27 @@ nav {
   ul > li {
     display: inline-block;
     margin-left: 20px;
+    -webkit-box-reflect:below 0.5px linear-gradient(transparent, #0005);
     
   }
   
   .back {
     text-align: center;
-
-  }
+    
+    
+}
 
  
   
 // --------------EQUIPMENT---------------------------------
 // -----------------------------------------
   
-.equip {
-  
-  // align-items: center;
-}
+
 
 section {
     display: grid;
-    width: 100%;
-    margin: 10px;
+    // width: 100%;
+    margin: 20px;
     padding: 6px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows:repeat(2, 1fr);
@@ -215,6 +295,7 @@ section {
     grid-template-areas: 
     "g1 g2 g3 g4"
     "g5 g6 g7 g8";
+    
   }
 
    .box1 {
@@ -238,13 +319,20 @@ section {
   position: relative;
   overflow: hidden;
   margin: 10px;
-  min-width: 420px;
-  max-width: 310px;
-  max-height: 520px;
+  min-width: 620px;
+  // max-width: 310px;
+  max-height: 620px;
+  border-radius: 40px;
   width: 100%;
   background: #000000;
   color: #eeeeee;
   text-align: center;
+  box-shadow: 0 0 5px #ffffff,
+                    // 0 0 25px #eeeeee,
+                    // 0 0 50px #eeeeee,
+                    // 0 0 200px #eeeeee;
+                    
+                    
   }
 
   figure.image * {
@@ -252,12 +340,14 @@ section {
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    
     }
 
     figure.image img {
       max-width: 100%;
       position: relative;
       opacity: 0.6;
+      
       }
 
 
@@ -266,6 +356,7 @@ section {
         left: 50px;
         right: 50px;
         display: inline-block;
+        border-radius: 40px;
         background: #000;
         -webkit-transform: skew(-5deg) rotate(-10deg) translate(0, -50%);
         -moz-transform: skew(-5deg) rotate(-10deg) translate(0, -50%);
@@ -277,6 +368,10 @@ section {
         top: 50%;
         text-transform: uppercase;
         font-weight: 400;
+        box-shadow: 0 0 5px #0596f7,
+                    0 0 25px #eeeeee,
+                    0 0 50px #eeeeee,
+                    0 0 200px #eeeeee;
         }
 
         figure.image:before {
@@ -296,6 +391,7 @@ section {
           -ms-transform: rotate(110deg) translateY(-50%);
           -o-transform: rotate(110deg) translateY(-50%);
           transform: rotate(110deg) translateY(-50%);
+          
           }
 
            figure.image:hover img,
@@ -305,6 +401,7 @@ section {
            -ms-transform: scale(1.1);
            -o-transform: scale(1.1);
            transform: scale(1.1);
+           
           }
            figure.image:hover h3,
            figure.image.hover h3 {
@@ -312,13 +409,15 @@ section {
            -ms-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
            -o-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
            transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+           
           }
            figure.image:hover:before,
            figure.image.hover:before {
-           -moz-transform:rotate(110deg) translateY(-150%);
+           -moz-transform: rotate(110deg) translateY(-150%);
            -ms-transform: rotate(110deg) translateY(-150%);
            -o-transform: rotate(110deg) translateY(-150%);
             transform: rotate(110deg) translateY(-150%);
+            
           }
 
 
@@ -354,11 +453,10 @@ section {
     text-shadow: 2px 4px 8px #4e4e4e;
   }
 
+   .tek {
+     font-size: small;
+   }
 
-  // Tablette---------------
-  // @media screen and (min-width: 360px) and (max-width: 768px )
 
-  // Desktop----------------------
-  
-   
  
+  
